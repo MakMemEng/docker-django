@@ -18,7 +18,7 @@ services:
       - '8001'
     volumes:
       - ./src:/code
-    command: uwsgi --socket :8001 --module mysite.wsgi
+    command: uwsgi --socket :8001 --module testsite.wsgi
     depends_on:
       - db
   db:
